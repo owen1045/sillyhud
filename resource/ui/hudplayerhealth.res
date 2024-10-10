@@ -5,12 +5,10 @@
 	{
 		"ControlName"	"EditablePanel"
 		"fieldName"		"HudPlayerHealth"
-		"xpos"			"20"		[$WIN32]
+		"xpos"			"c-265"		[$WIN32]
 		"xpos_minmode"	"-5"		[$WIN32]
-		"ypos"			"r140"	[$WIN32]
+		"ypos"			"c85"	[$WIN32]
 		"ypos_minmode"	"r88"	[$WIN32]
-		"xpos"			"32"	[$X360]
-		"ypos"			"r144"	[$X360]
 		"zpos"			"2"
 		"wide"			"250"
 		"tall"			"120"
@@ -30,8 +28,8 @@
 		"zpos"			"4"
 		"wide"			"51"
 		"tall"			"51"
-		"visible"		"1"
-		"enabled"		"1"
+		"visible"		"0"
+		"enabled"		"0"
 		"scaleImage"	"1"	
 	}		
 	"PlayerStatusHealthImageBG"
@@ -40,10 +38,9 @@
 		"fieldName"		"PlayerStatusHealthImageBG"
 		"xpos"			"73"
 		"xpos_minmode"	"58"
-		"ypos"			"33"
 		"zpos"			"3"
-		"wide"			"55"
-		"tall"			"55"
+		"wide"			"0"
+		"tall"			"0"
 		"visible"		"1"
 		"enabled"		"1"
 		"image"			"../hud/health_bg"
@@ -60,14 +57,12 @@
 		"ypos_minmode"	"40"	[$WIN32]
 		"ypos"			"43"	[$X360]
 		"zpos"			"2"
-		"wide"			"55"	[$WIN32]
+		"wide"			"0"	[$WIN32]
 		"wide_minmode"	"40"	[$WIN32]
-		"wide"			"35"	[$X360]
-		"tall"			"55"	[$WIN32]
+		"tall"			"0"	[$WIN32]
 		"tall_minmode"	"40"	[$WIN32]
-		"tall"			"35"	[$X360]
 		"visible"		"0"
-		"enabled"		"1"
+		"enabled"		"0"
 		"image"			"../hud/health_over_bg"
 		"scaleImage"	"1"	
 	}
@@ -80,14 +75,56 @@
 		"ypos"			"52"	[$WIN32]
 		"ypos"			"55"	[$X360]
 		"zpos"			"5"
-		"wide"			"50"
-		"tall"			"18"
+		"wide"			"70"
+		"tall"			"35"
 		"visible"		"1"
 		"enabled"		"1"
 		"labelText"		"%Health%"
 		"textAlignment"	"center"	
-		"font"			"HudClassHealth"
-		"fgcolor"		"TanDark"
+		"font"			"Monster55" 
+		"fgcolor"		"255 255 255 255"
+	}
+	"PlayerStatusHealthValueBG"
+	{
+		"ControlName"	"CExLabel"
+		"fieldName"		"PlayerStatusHealthValueBG"
+		"xpos"			"73"
+		"xpos_minmode"	"61"
+		"ypos"			"54"	[$WIN32]
+		"ypos"			"55"	[$X360]
+		"zpos"			"5"
+		"wide"			"80"
+		"tall"			"35"
+		"visible"		"1"
+		"enabled"		"1"
+		"labelText"		"%Health%"
+		"textAlignment"	"center"	
+		"font"			"Monster55" 
+		"fgcolor"		"0 0 0 255"
+	}
+	"TeamIndicator"
+	{
+		"ControlName"	"CTFImagePanel"
+		"fieldName"		"TeamIndicator"
+		"xpos"			"88"
+		"ypos"			"87"
+		"zpos"			"2"
+		"wide"			"50"
+		"tall"			"2"
+		"autoResize" 	"0"
+		"pinCorner"		"0"
+		"visible"		"1"
+		"enabled"		"1"
+		"image" 		"../hud/color_panel_brown"
+		"scaleImage"	"1"
+		"teambg_1"		"../hud/color_panel_brown"
+		"teambg_2"		"../hud/color_panel_red"
+		"teambg_3"		"../color_panel_blue"
+		
+		"src_corner_height"	"40"
+		"src_corner_width"	"40"
+		"draw_corner_width" "0"
+		"draw_corner_height" "0"
 	}
 	"PlayerStatusMaxHealthValue"
 	{
