@@ -106,7 +106,7 @@
 	{
 		"ControlName"	"CTFImagePanel"
 		"fieldName"		"TeamIndicator"
-		"xpos"			"85"
+		"xpos"			"83"
 		"ypos"			"87"
 		"zpos"			"2"
 		"wide"			"60"
